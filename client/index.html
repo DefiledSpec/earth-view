@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOBAL VECTOR TERMINAL v7.0</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+	<script src="./assets/js/index.js" type="module"></script>
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.105/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.105/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/4.0.0/satellite.min.js"></script>
+
+
+</head>
+<body>
+
+    <div id="hud">
+        <h1>👁️ GOD'S EYE TERMINAL</h1>
+        <div class="label">Operational Matrices</div>
+        
+        <button class="toggle-btn" id="satellitesToggle">
+            <span>📡 ORBITAL CONSTELLATION</span> <span class="status-tag" id="satellitesStatus">OFF</span>
+        </button>
+
+        <button class="toggle-btn" id="planesToggle">
+            <span>✈️ AIR TRAFFIC MATRIX</span> <span class="status-tag" id="planesStatus">OFF</span>
+        </button>
+
+        <button class="toggle-btn" id="boatsToggle">
+            <span>🚢 MARINE VESSEL MATRIX</span> <span class="status-tag" id="boatsStatus">OFF</span>
+        </button>
+    </div>
+
+    <div id="infobox" ></div>
+
+    <div id="cesiumContainer"></div>
+    <div id="creditContainer"></div>
+
+</body>
+</html>
